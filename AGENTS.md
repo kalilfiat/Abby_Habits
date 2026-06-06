@@ -8,8 +8,20 @@ https://docs.expo.dev/versions/v56.0.0/
 
 - `npm run web` — testear en navegador
 - `npx tsc --noEmit` — type-check (correr siempre antes de dar por terminado)
+- `npm run verify` — chequeos anti-regresión (módulos, Abby PNGs, layout Progreso)
 - `npx expo export --platform web` — validar que bundlea
 - `npm start` — Expo Go en celular vía QR
+- `npm run build:apk` — APK release en `dist/` (corre `verify` + `tsc` antes)
+
+## Evitar regresiones (scaffold / APK sin imágenes)
+
+- **Commitear** antes de `expo prebuild --clean` o de tocar `android/` a mano; el
+  prebuild limpio puede dejar el repo mezclado con plantilla si el JS no está guardado.
+- Las poses de Abby **siempre** van con `require()` en `src/ui/mascotAssets.ts`
+  (Metro las empaqueta en release); no usar placeholders ni URLs sueltas en UI.
+- `app.json` debe mantener `"assetBundlePatterns": ["assets/**/*"]`.
+- Si algo se pierde, existen `scripts/restore-from-transcript.mjs` y
+  `scripts/restore-strreplace-from-transcript.mjs` (ver reportes JSON en `scripts/`).
 
 ## Arquitectura (respetar la dirección de dependencias)
 

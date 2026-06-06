@@ -2,6 +2,14 @@
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 
+Write-Host "Verificando app (anti-regresion)..."
+Push-Location $root
+node scripts/verify-app.mjs
+if ($LASTEXITCODE -ne 0) { Pop-Location; exit $LASTEXITCODE }
+npx tsc --noEmit
+if ($LASTEXITCODE -ne 0) { Pop-Location; exit $LASTEXITCODE }
+Pop-Location
+
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 $env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 $env:GRADLE_USER_HOME = "C:\gradle"
@@ -31,5 +39,21 @@ $version = (Get-Content "$root\package.json" | ConvertFrom-Json).version
 $src = "$root\android\app\build\outputs\apk\release\app-release.apk"
 $dest = "$root\dist\abby-habits-$version.apk"
 Copy-Item $src $dest -Force
+
+# Release bundle should include several PNG drawables (Abby poses + icons).
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$zip = [System.IO.Compression.ZipFile]::OpenRead($dest)
+try {
+  $pngCount = @($zip.Entries | Where-Object { $_.FullName -match '\.png$' }).Count
+  $assetCount = @($zip.Entries | Where-Object { $_.FullName -match 'assets/.*\.(png|jpg|webp)$' }).Count
+} finally {
+  $zip.Dispose()
+}
+if ($pngCount -lt 8) {
+  Write-Warning "APK tiene solo $pngCount PNG; puede faltar bundle de imagenes (minimo 8)."
+} else {
+  Write-Host "APK assets: $pngCount PNG total, $assetCount en assets/."
+}
+
 Write-Host ""
 Write-Host "APK listo: $dest"
