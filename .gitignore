@@ -9,7 +9,7 @@ dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# Native (generados por expo prebuild — ver build-apk.ps1)
 .kotlin/
 *.orig.*
 *.jks
@@ -17,25 +17,49 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+/ios
+/android
 
 # Metro
 .metro-health-check*
+
+# Build intermedio (el APK release versionado vive en APK/)
+*.aab
 
 # debug
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
 # macOS
 .DS_Store
 *.pem
 
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# test / coverage
+coverage/
+
+# IDE y agentes (config local por máquina)
+.idea/
+.vscode/
+.claude/
+.cursor/
+
+# Scripts de recuperación — reportes generados
+scripts/*-report.json
+
+# Referencias de diseño en raíz (la app usa assets/abby/)
+/abby/
+/Mascota*.png
