@@ -1,0 +1,247 @@
+{
+  "transcript": "C:\\Users\\Kalil\\.cursor\\projects\\c-Users-Kalil-Desktop-Habitos\\agent-transcripts\\a42f09b4-3aff-4b61-a98e-4a73ea562fa5\\a42f09b4-3aff-4b61-a98e-4a73ea562fa5.jsonl",
+  "workspace": "c:\\Users\\Kalil\\Desktop\\Habitos",
+  "totalWriteCalls": 55,
+  "uniquePaths": 39,
+  "skippedOlderWrites": 16,
+  "parseErrors": [],
+  "recoveredCount": 39,
+  "failedCount": 0,
+  "recovered": [
+    {
+      "path": "app.json",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\app.json",
+      "lineNum": 340,
+      "bytes": 747
+    },
+    {
+      "path": "eas.json",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\eas.json",
+      "lineNum": 294,
+      "bytes": 289
+    },
+    {
+      "path": "scripts\\build-apk.ps1",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\scripts\\build-apk.ps1",
+      "lineNum": 353,
+      "bytes": 1088
+    },
+    {
+      "path": "src\\core\\habit-engine\\history.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\habit-engine\\history.ts",
+      "lineNum": 177,
+      "bytes": 2585
+    },
+    {
+      "path": "src\\core\\habit-engine\\progress.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\habit-engine\\progress.ts",
+      "lineNum": 191,
+      "bytes": 1385
+    },
+    {
+      "path": "src\\core\\mascot\\chatIntents.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\mascot\\chatIntents.ts",
+      "lineNum": 211,
+      "bytes": 3293
+    },
+    {
+      "path": "src\\core\\mascot\\conversation.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\mascot\\conversation.ts",
+      "lineNum": 211,
+      "bytes": 4593
+    },
+    {
+      "path": "src\\core\\mascot\\pose.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\mascot\\pose.ts",
+      "lineNum": 381,
+      "bytes": 755
+    },
+    {
+      "path": "src\\core\\mascot\\progressMessages.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\mascot\\progressMessages.ts",
+      "lineNum": 191,
+      "bytes": 3703
+    },
+    {
+      "path": "src\\core\\reminders\\config.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\reminders\\config.ts",
+      "lineNum": 131,
+      "bytes": 882
+    },
+    {
+      "path": "src\\core\\reminders\\index.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\reminders\\index.ts",
+      "lineNum": 139,
+      "bytes": 150
+    },
+    {
+      "path": "src\\core\\reminders\\messages.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\reminders\\messages.ts",
+      "lineNum": 131,
+      "bytes": 2285
+    },
+    {
+      "path": "src\\core\\reminders\\rules.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\core\\reminders\\rules.ts",
+      "lineNum": 131,
+      "bytes": 6069
+    },
+    {
+      "path": "src\\data\\notifications.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\data\\notifications.ts",
+      "lineNum": 139,
+      "bytes": 5473
+    },
+    {
+      "path": "src\\ui\\components\\AbbyAvatar.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\AbbyAvatar.tsx",
+      "lineNum": 381,
+      "bytes": 1119
+    },
+    {
+      "path": "src\\ui\\components\\CelebrationCardFrame.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\CelebrationCardFrame.tsx",
+      "lineNum": 106,
+      "bytes": 1887
+    },
+    {
+      "path": "src\\ui\\components\\ChatBubble.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\ChatBubble.tsx",
+      "lineNum": 212,
+      "bytes": 1915
+    },
+    {
+      "path": "src\\ui\\components\\ChatSuggestionChips.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\ChatSuggestionChips.tsx",
+      "lineNum": 212,
+      "bytes": 1582
+    },
+    {
+      "path": "src\\ui\\components\\HabitProgressCard.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\HabitProgressCard.tsx",
+      "lineNum": 192,
+      "bytes": 7575
+    },
+    {
+      "path": "src\\ui\\components\\HomeTabBar.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\HomeTabBar.tsx",
+      "lineNum": 178,
+      "bytes": 1622
+    },
+    {
+      "path": "src\\ui\\components\\Insight.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\Insight.tsx",
+      "lineNum": 37,
+      "bytes": 2867
+    },
+    {
+      "path": "src\\ui\\components\\Mascot.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\Mascot.tsx",
+      "lineNum": 12,
+      "bytes": 1361
+    },
+    {
+      "path": "src\\ui\\components\\PeriodHistoryStrip.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\PeriodHistoryStrip.tsx",
+      "lineNum": 178,
+      "bytes": 2014
+    },
+    {
+      "path": "src\\ui\\components\\ProgressBar.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\ProgressBar.tsx",
+      "lineNum": 37,
+      "bytes": 1610
+    },
+    {
+      "path": "src\\ui\\components\\ProgressSummaryCard.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\components\\ProgressSummaryCard.tsx",
+      "lineNum": 191,
+      "bytes": 4287
+    },
+    {
+      "path": "src\\ui\\mascotAssets.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\mascotAssets.ts",
+      "lineNum": 381,
+      "bytes": 479
+    },
+    {
+      "path": "src\\ui\\motion\\AmbientBackground.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\AmbientBackground.tsx",
+      "lineNum": 66,
+      "bytes": 5753
+    },
+    {
+      "path": "src\\ui\\motion\\BreathingView.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\BreathingView.tsx",
+      "lineNum": 36,
+      "bytes": 1062
+    },
+    {
+      "path": "src\\ui\\motion\\ConfettiBackground.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\ConfettiBackground.tsx",
+      "lineNum": 76,
+      "bytes": 4211
+    },
+    {
+      "path": "src\\ui\\motion\\config.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\config.ts",
+      "lineNum": 36,
+      "bytes": 303
+    },
+    {
+      "path": "src\\ui\\motion\\FadeSlideIn.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\FadeSlideIn.tsx",
+      "lineNum": 36,
+      "bytes": 1619
+    },
+    {
+      "path": "src\\ui\\motion\\haptics.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\haptics.ts",
+      "lineNum": 36,
+      "bytes": 570
+    },
+    {
+      "path": "src\\ui\\motion\\index.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\index.ts",
+      "lineNum": 36,
+      "bytes": 306
+    },
+    {
+      "path": "src\\ui\\motion\\ScalePressable.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\motion\\ScalePressable.tsx",
+      "lineNum": 239,
+      "bytes": 2298
+    },
+    {
+      "path": "src\\ui\\screens\\ChatScreen.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\screens\\ChatScreen.tsx",
+      "lineNum": 212,
+      "bytes": 8086
+    },
+    {
+      "path": "src\\ui\\screens\\NotificationsScreen.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\screens\\NotificationsScreen.tsx",
+      "lineNum": 139,
+      "bytes": 6059
+    },
+    {
+      "path": "src\\ui\\screens\\OnboardingScreen.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\screens\\OnboardingScreen.tsx",
+      "lineNum": 41,
+      "bytes": 4344
+    },
+    {
+      "path": "src\\ui\\useAppFonts.ts",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\useAppFonts.ts",
+      "lineNum": 56,
+      "bytes": 505
+    },
+    {
+      "path": "src\\ui\\useImmersiveSystemUI.tsx",
+      "abs": "c:\\Users\\Kalil\\Desktop\\Habitos\\src\\ui\\useImmersiveSystemUI.tsx",
+      "lineNum": 284,
+      "bytes": 1302
+    }
+  ],
+  "failed": []
+}

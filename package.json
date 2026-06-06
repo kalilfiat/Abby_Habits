@@ -1,12 +1,30 @@
 {
-  "name": "scaffold",
+  "name": "abby-habits",
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo-google-fonts/fredoka": "^0.4.1",
+    "@expo-google-fonts/nunito": "^0.4.2",
+    "@expo/metro-runtime": "~56.0.13",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^7.16.2",
+    "@react-navigation/native": "^7.2.5",
+    "@react-navigation/native-stack": "^7.16.0",
     "expo": "~56.0.8",
+    "expo-font": "~56.0.5",
+    "expo-haptics": "~56.0.3",
+    "expo-linear-gradient": "~56.0.4",
+    "expo-navigation-bar": "~56.0.0",
+    "expo-notifications": "~56.0.15",
     "expo-status-bar": "~56.0.4",
     "react": "19.2.3",
-    "react-native": "0.85.3"
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "4.25.2",
+    "react-native-web": "^0.21.2",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
@@ -14,9 +32,12 @@
   },
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild:android": "expo prebuild --platform android --clean",
+    "build:apk": "powershell -ExecutionPolicy Bypass -File ./scripts/build-apk.ps1",
+    "build:apk:cloud": "eas build -p android --profile preview"
   },
   "private": true
 }
